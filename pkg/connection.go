@@ -23,7 +23,7 @@ type Connection interface {
 	WriteMessage(msg *Message)
 
 	// ReadMessage reads a message from the wire.
-	// This blocks until there's a message available to read.
+	// This blocks untild there's a message available to read.
 	// Returns nil if the Connection is closed.
 	ReadMessage() *Message
 
